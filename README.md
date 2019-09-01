@@ -41,8 +41,9 @@ This is a kind of IMDB, where it has two modules, one is Actors and another one 
 Actor can act in multiple movies, 
 Movie can have multiple actors
 
-#### Application contains -
-  -Screen to list all movies with Name, Year of release and all Actors of that movie and also a search bar for searching of movies.
-  -Screen to ‘add’ a new movie with the necessary fields with existing actors. If the user wants to add
+#### Application contains 
+  - Screen to list all movies with Name, Year of release and all Actors of that movie and also a search bar for searching of movies.
+  - Screen to list all actors with all of his details.
+  - Screen to ‘add’ a new movie with the necessary fields with existing actors. If the user wants to add
     new ‘Actors’ while creating the movie which are not present in the database then he should be able to
     do so while being on the same screen.
