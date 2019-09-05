@@ -14,7 +14,7 @@ export class Movie extends Component {
     }
 
     componentDidMount() {
-        const url = 'http://localhost:3001/movies'
+        const url = '/movies'
         axios.get(url)
         .then(response => {
             console.log(response.data[0].actors)

@@ -26,9 +26,11 @@ function App() {
                 </MDBNavItem>
               </MDBNavbarNav>      
             </MDBCollapse>
-          </MDBNavbar>
+          </MDBNavbar>          
           <Switch>
             <Route path='/movies' component={Movie}/>
+
+            {/* <Route path='/' component={Home}/> */}
             
             <Route path='/artists' component={Artist}/>
 

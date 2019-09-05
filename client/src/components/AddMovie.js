@@ -64,7 +64,7 @@ export class AddMovie extends Component {
         formData.append('plot', this.state.plot);
         formData.append('actors', this.state.actors);
 
-        let url = 'http://localhost:3001/movies';
+        let url = '/movies';
         Axios.post(url, formData)
         .then(response => {
             console.log('Data sent!!!')
@@ -76,7 +76,7 @@ export class AddMovie extends Component {
 
     handleNewArtistSubmit = e => {
         e.preventDefault()
-        const url = 'http://localhost:3001/actors';
+        const url = '/actors';
         const formData = {
             name: this.state.artistName,
             sex: this.state.artistGender,
@@ -96,7 +96,7 @@ export class AddMovie extends Component {
     }
 
     componentDidMount() {
-        let url = 'http://localhost:3001/actors';
+        let url = '/actors';
         Axios.get(url)
         .then(response => {
             this.setState({ actorsList: response.data })

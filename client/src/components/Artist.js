@@ -12,7 +12,7 @@ export class Artist extends Component {
     }
 
     componentDidMount() {
-        axios.get('http://localhost:3001/actors')
+        axios.get('/actors')
         .then(response => {
             this.setState({ actors: response.data })
         }).catch(err => {
