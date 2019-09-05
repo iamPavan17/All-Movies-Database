@@ -22,9 +22,9 @@ app.use('/movies', MovieRouter);
 const ActorRouter = require('./routes/actors');
 app.use('/actors', ActorRouter);
 
-app.use(express.static(path.join(__dirname,"client/build"))) 
+app.use(express.static(path.join(__dirname,"./client/build"))) 
 app.get("*",(req,res) => { 
-    res.sendFile(path.join(__dirname + "/client/build/index.html")) 
+    res.sendFile(path.join(__dirname + "./client/build/index.html")) 
 }) 
 
 // For invalid URL path
