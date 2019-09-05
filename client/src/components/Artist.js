@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import axios from 'axios'
+import axios from '../config/axios'
 import { Table } from 'semantic-ui-react'
 
 export class Artist extends Component {

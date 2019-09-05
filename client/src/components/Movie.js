@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Table, Button, Icon, Form, Input } from 'semantic-ui-react'
 import BuildTable from './BuilTable'
-import axios from 'axios';
+import axios from '../config/axios';
 import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
 
 export class Movie extends Component {

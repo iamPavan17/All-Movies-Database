@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Button, Form, Modal, TextArea } from 'semantic-ui-react'
 import Select from 'react-select';
-import Axios from 'axios';
+import Axios from '../config/axios';
 import  { Redirect } from 'react-router-dom'
 import {
     DateInput,
